@@ -1,3 +1,5 @@
+<!-- Blog Index Page Template -->
+
 <?php 
 get_header(); 
 ?>
@@ -30,15 +32,10 @@ get_header();
     </div>
 
     <hr id="page">
-
-
  <?php }
     echo paginate_links();
 ?>
-
-
 </div>
-
 <?php
 get_footer();
 ?>

@@ -12,7 +12,9 @@
 
         <div class="newstext b1">
                 <h1 class="headline"><i class="fas fa-clinic-medical"></i> About Us</h1>
-                <img src="<?php echo get_theme_file_uri('/images/medical-hero.jpg') ?>" alt="latest news">
+                <div id="newsImg">
+                    <img src="<?php echo get_theme_file_uri('/images/medical-hero.jpg') ?>" alt="latest news">
+                </div>
                 <p>At Grand Valley Medical Specialists our goal is to provide our patients with the best experience possible when
                     interacting with our practice. That’s why we’re pleased to offer secure, interactive patient self-service
                     features
@@ -20,7 +22,7 @@
                     let you communicate with us from the convenience of your home or office.
                     <br>
                     <br>
-                    <a href="#" target="_blank">&rarr; Read More...</a>
+                    <a href="/about">&rarr; Read More...</a>
                 </p>
             </div>
             <br>
@@ -28,23 +30,33 @@
 
             <div class="newstext">
                 <h1 class="headline"><i class="far fa-newspaper"></i> Latest News</h1>
-                <img src="<?php echo get_theme_file_uri('/images/screening.jpg') ?>" alt="latest news">
-                <p> <strong>Before coming to the office for your scheduled appointment please read the statement below.</strong><br><br>
-                Do not come into the office if you are experiencing any of the following symptoms: <br><br>
-                New or worsening cough, new or worsening shortness of breath, fever of 100.0 degrees or higher, chills, body aches, loss
-                of taste and smell, sore throat, new nasal drainage, sinus pain/pressure, fatigue, loss of appetite, diarrhea, nausea,
-                or abdominal pain. If you have any of the above symptoms, please call our office for recommendations.
-                <br><br>
-                No visitors are allowed to accompany patients in the office unless you are a parent of a minor, or you are a patient
-                that has a physical dependence on another or you are unable to communicate, hear or remember details. All patients will
-                be screened at the front door before entering. Please bring your own mask as one is required upon entering the office.
-                If you do not have a mask, one will be available at the front door.
-                <br><br>
-                See our COVID-19 Preparedness Plan. It is posted at the check-in at both practices. Patients will be provided with a
-                copy upon request. If you have any questions or concerns, please call our clinical staff at 616-459-3158. Thank you,
-                Grand Valley Medical Specialists
-                <br>
-                </p>
+
+                <?php
+                    $homepageNews = new WP_Query(array(
+                        'posts_per_page' => 2,
+                        'post_type' => 'post'
+                    ));
+                    while($homepageNews->have_posts()) {
+                        $homepageNews->the_post(); ?>
+                        <div class="post-item">
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+            <div class="blog-index-grid">
+                <div class="thumb">
+                    <?php the_post_thumbnail('thumbLandscape'); ?>
+                </div>
+
+                <div class="excerpt">
+                    <?php the_excerpt(); ?>
+
+                    <div class="readMore">
+                        <p><a href="<?php the_permalink(); ?>">Read more...</a></p>
+                    </div>
+                </div>            
+            </div>
+    </div>
+    <?php } ?>
+                
             </div>            
         </div>
 

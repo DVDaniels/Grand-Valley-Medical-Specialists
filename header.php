@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Valley Medical Specialists</title>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
     <?php wp_head(); ?>
 </head>
 <body>
@@ -13,12 +18,14 @@
     <div class="contact-info">
         <p><i class="fas fa-phone-square"></i> Phone: +1 616-459-3158</p>
         <a href="https://www.facebook.com/yourgvms/" target="_blank"><p><i class="fab fa-facebook-square"></i> Visit us on Facebook</p></a>
-        
     </div>
 </header>
 
 <nav>
     <ul class="navbar">
+        <li>
+            <a href="https://gvmsonline.followmyhealth.com/Login/Home/Index?authproviders=0&returnArea=PatientAccess#!/default" target="_blank"class="link"><i class="fas fa-sign-in-alt"></i> Patient Portal</a>
+        </li>
         <li>
             <?php
                 wp_nav_menu(array(
@@ -28,3 +35,17 @@
         </li>
     </ul>
 </nav>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

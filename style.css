@@ -188,7 +188,7 @@ a:hover {
     background: linear-gradient(90deg, rgba(132,207,255,1) 6%, rgba(117,213,255,1) 47%, rgba(132,207,255,1) 100%);
 }
 
-.news img {
+#newsImg img {
     float: left;
     height: 15rem;
     width: auto;
@@ -403,9 +403,10 @@ a:hover {
 /* Page Styles */
 
 .container-page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     height: auto;
-    /* background: rgb(132,207,255); */
-    /* background: linear-gradient(90deg, rgba(132,207,255,1) 6%, rgba(117,213,255,1) 47%, rgba(132,207,255,1) 100%); */
     background-color: #fefffe;
     padding: 3rem 8rem;
 }
@@ -415,10 +416,16 @@ a:hover {
     font-size: 4rem;
 }
 
+.container-page img {
+    float: left;
+    height: auto;
+}
+
 .container-page > p {
     font-size: 2rem;
 }
 
+/* //////////////////////////////////////////////// */
 /* Metabox */
 .metabox {
     background-color: #FAF0CA;
@@ -448,14 +455,17 @@ a:hover {
     font-size: 1.3rem;
     color: rgb(168, 146, 56);
     }
+
 .metabox a {
     color: rgb(168, 146, 56);
     text-decoration: none;
     font-weight: bold;
     }
+
 .metabox a:hover {
     text-decoration: underline;
     }
+
 .metabox .metabox__blog-home-link {
     background-color: #0D3B66;
     color: #FFF;
@@ -464,6 +474,7 @@ a:hover {
     border-radius: 3px 0 0 3px;
     font-weight: normal;
     }
+
 .metabox .metabox__blog-home-link:hover {
     text-decoration: none;
     background-color: rgb(11, 47, 81);
@@ -476,6 +487,7 @@ a:hover {
     background-color: #FAF0CA;
     margin: 0 0 40px 0;
   }
+
   @media (min-width: 767px) {
   .page-links {
       margin: 0 0 40px 20px;
@@ -559,7 +571,12 @@ a:hover {
     font-size: 2rem;
 }
 
-/* Blog Index Flexbox */
+/* Blog Index Page Template */
+.post-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .blog-index-grid {
     display: flex;
     flex-direction: row;
@@ -570,11 +587,23 @@ a:hover {
     padding-bottom: 2rem;
 }
 
+.thumb img {
+    width: auto;
+    height: auto;
+    box-shadow: 2px 2px 2px #202429;
+}
+
 .excerpt {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .readMore {
     margin-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+#page {
+   background-color: rgba(19, 26, 108, 0.324);
+   height: .2rem;
+   border: 0rem;
 }
