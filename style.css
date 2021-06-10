@@ -590,7 +590,6 @@ a:hover {
 .thumb img {
     width: auto;
     height: auto;
-    box-shadow: 2px 2px 2px #202429;
 }
 
 .excerpt {

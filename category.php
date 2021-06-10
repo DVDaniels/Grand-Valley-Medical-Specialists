@@ -1,4 +1,5 @@
-<!-- Blog Index Page Template -->
+<!-- Category Archive -->
+test category.php
 <?php 
 get_header(); 
 ?>
@@ -12,8 +13,9 @@ get_header();
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <div class="metabox">
-            <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+            <p>Back to <a href="/blog">Latest News</a> | Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y'); ?> in <?php echo get_the_category_list(', '); ?></p>
         </div>
+
 
         <div class="blog-index-grid">
             <div class="thumb">
@@ -35,6 +37,10 @@ get_header();
     echo paginate_links();
 ?>
 </div>
+
+
+
+
 <?php
 get_footer();
 ?>

@@ -1,4 +1,4 @@
-<!-- Blog Index Page Template -->
+<!-- Archive Doctors Page -->
 <?php 
 get_header(); 
 ?>
@@ -12,7 +12,7 @@ get_header();
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <div class="metabox">
-            <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+            <p>Specialty: <?php echo get_the_category_list(', '); ?></p>
         </div>
 
         <div class="blog-index-grid">
