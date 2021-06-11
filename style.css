@@ -3,7 +3,10 @@ Theme name: Grand Valley Medical Specialists
 Author: DanielsWebDesign.com
 Version: 1.0
 
-Description: Custom theme designed for Grand Valley Medical Specialists.
+Description: Custom theme designed for Grand Valley Medical Specialists. Custom Post options for Doctors which will allow for a searchable archive page that will list all Doctors and categorize them by specialty.
+
+<hr>
+Tags: accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, block-patterns, rtl-language-support, sticky-post, responsive.
 */
 
 /* Global Styles */
@@ -613,4 +616,9 @@ a:hover {
 
 .phone:hover {
     color: #0096ff;
+}
+
+.is-search-icon {
+    background-color: #fff;
+    border: 1px solid #fff;
 }
