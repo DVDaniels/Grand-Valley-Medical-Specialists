@@ -1,5 +1,5 @@
-<!-- Category Archive -->
-test category.php
+<!-- Category Archive Page for Doctors Posts-->
+
 <?php 
 get_header(); 
 ?>
@@ -13,7 +13,7 @@ get_header();
         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <div class="metabox">
-            <p>Back to <a href="/blog">Latest News</a> | Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+            <p>Back to <a href="/doctors">Doctors</a> | Speciality: <?php echo get_the_category_list(', '); ?></p>
         </div>
 
 

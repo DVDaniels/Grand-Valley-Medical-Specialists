@@ -13,9 +13,9 @@
         <div class="newstext b1">
                 <h1 class="headline"><i class="fas fa-clinic-medical"></i> About Us</h1>
                 <div id="newsImg">
-                    <img src="<?php echo get_theme_file_uri('/images/medical-hero.jpg') ?>" alt="latest news">
+                    <img src="<?php echo get_theme_file_uri('/images/bearSick.jpg') ?>" alt="latest news">
                 </div>
-                <p>At Grand Valley Medical Specialists our goal is to provide our patients with the best experience possible when
+                <p class="mainText">At Grand Valley Medical Specialists our goal is to provide our patients with the best experience possible when
                     interacting with our practice. That’s why we’re pleased to offer secure, interactive patient self-service
                     features
                     that

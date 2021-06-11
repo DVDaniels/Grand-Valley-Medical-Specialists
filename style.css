@@ -190,10 +190,10 @@ a:hover {
 
 #newsImg img {
     float: left;
-    height: 15rem;
+    height: 20rem;
     width: auto;
-    padding-right: 3rem;
     border-radius: 3px;
+    border: 1px solid #003d78;
 }
 
 .newstext {
@@ -201,6 +201,10 @@ a:hover {
     padding: 2rem 8rem;
     margin: 2rem 0;
     font-weight: 400;
+}
+
+.mainText {
+    padding-left: 30rem;
 }
 
 .b1 {
@@ -605,4 +609,8 @@ a:hover {
    background-color: rgba(19, 26, 108, 0.324);
    height: .2rem;
    border: 0rem;
+}
+
+.phone:hover {
+    color: #0096ff;
 }

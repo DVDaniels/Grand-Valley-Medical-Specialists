@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Valley Medical Specialists</title>
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
     <?php wp_head(); ?>
 </head>
 <body>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="contact-info">
-        <p><i class="fas fa-phone-square"></i> Phone: +1 616-459-3158</p>
+        <p class="phone"><i class="fas fa-phone-square"></i> Phone: +1 616-459-3158</p>
         <a href="https://www.facebook.com/yourgvms/" target="_blank"><p><i class="fab fa-facebook-square"></i> Visit us on Facebook</p></a>
     </div>
 </header>
