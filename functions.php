@@ -18,3 +18,4 @@ function GVMC_features() {
 }
 
 add_action('after_setup_theme', 'GVMC_features');
+

@@ -31,6 +31,7 @@
                 wp_nav_menu(array(
                     'theme_location' => 'headerMenuLocation'
                 ));
+
             ?>
         </li>
     </ul>

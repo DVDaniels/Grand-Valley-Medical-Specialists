@@ -104,7 +104,6 @@ a:hover {
     justify-content: flex-end;
     height: 5rem;
     font-size: 2rem;
-    /* background-image: radial-gradient( circle farthest-corner at 16.5% 28.1%,  rgb(34, 61, 110) 0%, rgb(0, 66, 128) 90% ); */
     background: rgb(0,93,200);
     background: linear-gradient(180deg, rgba(0,93,200,1) 0%, rgba(14,63,119,1) 100%);
     color: #fff;
@@ -621,4 +620,16 @@ a:hover {
 .is-search-icon {
     background-color: #fff;
     border: 1px solid #fff;
+}
+
+
+/* Sub Menu */
+
+.sub-menu {
+    overflow: hidden;
+    /* display: none; */
+}
+
+.sub-menu a:hover {
+    display: inline-block;
 }

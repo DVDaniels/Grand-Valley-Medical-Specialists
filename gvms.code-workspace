@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../mu-plugins"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Grand Valley Medical Specialists"
+	}
+}
